@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bash
+
+# cleanup pid if it exists
+[[ -e /config/lidarr.pid ]] && \
+	rm -rf /config/lidarr.pid
+
+# permissions
+chown -R abc:abc \
+	/opt/lidarr
+

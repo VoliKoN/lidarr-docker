@@ -1,0 +1,11 @@
+version: '2'
+services:
+  lidarr-test:
+    build: .
+    environment:
+      - TZ=<timezone>
+    ports:
+      - "8686:8686"
+    volumes:
+      - ./config:/config
+      - ./music:/music
