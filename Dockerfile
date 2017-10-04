@@ -11,7 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
   apt-get install $BUILD_APTLIST $BASE_APTLIST -qy && \
   npm install -g npm@latest && \
 
-  export LIDARR_VERSION="$(curl 'https://ci.appveyor.com/api/projects/lidarr/lidarr' | sed -n 's/.*"version":"\(.*\)",/\1/p' | cut -d\" -f1)" && \
+  export LIDARR_VERSION="0.2.0.50" && \
   export LIDARR_BRANCH="$(curl 'https://ci.appveyor.com/api/projects/lidarr/lidarr' | sed -n 's/.*"repositoryBranch":"\(.*\)",/\1/p' | cut -d\" -f1)" && \
   curl -o /tmp/lidarr.tar.gz -L https://ci.appveyor.com/api/projects/Lidarr/lidarr/artifacts/_artifacts/Lidarr.$LIDARR_BRANCH.$LIDARR_VERSION.linux.tar.gz && \
   mkdir -p /opt/lidarr && \
