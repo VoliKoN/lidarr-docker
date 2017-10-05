@@ -1,7 +1,8 @@
 version: '2'
 services:
-  lidarr-test:
-    build: .
+  lidarr:
+    container_name: lidarr
+    image: volikon/lidarr
     environment:
       - TZ=<timezone>
     ports:
