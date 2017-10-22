@@ -4,7 +4,6 @@ umask 022
 
 cd /opt/lidarr || exit
 
-XDG_CONFIG_HOME="/config/xdg"
 exec \
 	s6-setuidgid abc mono --debug Lidarr.exe \
 	-nobrowser -data=/config
