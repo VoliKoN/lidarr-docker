@@ -17,9 +17,9 @@ docker run \
         -v </path/to/appdata>:/config \
         -v <path/to/tvseries>:/music \
         -v <path/to/downloadclient-downloads>:/downloads \
-        volikon/lidarr:0.2.0.50
+        volikon/lidarr:latest
 ```
-volikon/lidarr:latest for nightly, 0.2.0.50 is last working build.
+volikon/lidarr:latest is nightly build. ~~0.2.0.50 is last working build.~~
 
 ## Parameters
 
