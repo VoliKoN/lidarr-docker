@@ -2,6 +2,7 @@ FROM lsiobase/mono
 
 # set environment variables
 ARG DEBIAN_FRONTEND="noninteractive"
+ENV XDG_CONFIG_HOME="/config/xdg"
 
 ENV BUILD_APTLIST="wget build-essential"
 ENV BASE_APTLIST="libssl-dev nodejs"
