@@ -19,7 +19,7 @@ docker run \
         -v <path/to/downloadclient-downloads>:/downloads \
         volikon/lidarr:latest
 ```
-volikon/lidarr:latest is nightly build. ~~0.2.0.50 is last working build.~~
+volikon/lidarr:latest is nightly build.
 
 ## Parameters
 
