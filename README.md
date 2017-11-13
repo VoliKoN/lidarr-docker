@@ -1,9 +1,9 @@
 # lidarr-docker
-Lidarr docker image
+[Lidarr](https://github.com/lidarr/Lidarr):
+Looks and smells like Sonarr but made for music.
+
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/volikon/lidarr.svg)](https://hub.docker.com/r/volikon/lidarr/)
-
-https://github.com/lidarr/Lidarr
 
 Based on Linuxserver's Sonarr:
 https://github.com/linuxserver/docker-sonarr
