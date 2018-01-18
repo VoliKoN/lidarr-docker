@@ -17,7 +17,7 @@ docker run \
         -e TZ=<timezone> \ 
         -v /etc/localtime:/etc/localtime:ro \
         -v </path/to/appdata>:/config \
-        -v <path/to/tvseries>:/music \
+        -v <path/to/music>:/music \
         -v <path/to/downloadclient-downloads>:/downloads \
         volikon/lidarr:latest
 ```
