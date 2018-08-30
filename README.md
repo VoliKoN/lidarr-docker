@@ -1,3 +1,6 @@
+# This is unmaintained. You should probably use:
+# https://github.com/linuxserver/docker-lidarr
+
 # lidarr-docker
 [Lidarr](https://github.com/lidarr/Lidarr):
 Looks and smells like Sonarr but made for music.
