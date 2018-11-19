@@ -4,7 +4,13 @@ umask 022
 
 cd /opt/lidarr || exit
 
-exec \
-	s6-setuidgid abc mono --debug Lidarr.exe \
-	-nobrowser -data=/config
+if [ "$DEBUG" = "NO" ]; then
+  	exec \
+		s6-setuidgid abc mono Lidarr.exe \
+		-nobrowser -data=/config
+else
+  	exec \
+		s6-setuidgid abc mono --debug Lidarr.exe \
+		-nobrowser -data=/config
+fi
 
